@@ -1,7 +1,54 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-600.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v25-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-700.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
 body {
     display: flex;
+    margin: 0;
     font-family: "Montserrat", sans-serif;
 }
+
+.container {
+    margin-left: 110px;
+}
+
+
+/* Navbar Styles */
 
 nav { 
     display: block;
@@ -10,7 +57,7 @@ nav {
     left: 0;
     width: 110px;
     height: 100vh;
-    box-shadow: 0px 0px 8px #cccccc;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -19,38 +66,213 @@ nav::-webkit-scrollbar {
     display: none;
 }
 
-ul {
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul {
     margin: 0;
     padding: 0;
 }
 
-nav a {
-    display: flex;
-    width: 110px; 
-    align-items: center;
-    justify-content: center;
-    height: 84px; 
-    text-decoration: none;
+nav svg {
+    width: 20px;
+    height: 20px;
+    margin-left: none;
+    margin-right: none;
+    stroke-width: 1px;
 }
 
 nav .logo {
     height: 100px;
-    font-weight: 700;
     font-size: 56px;
     background-color: #262728;
-    color: #ffffff;
-}
-
-ul a:link, ul a:visited {
-    background-color: #f7f5ff;
-    color: #3e4041;
-}
-
-ul a:hover, ul a:focus {
-    background-color: #3e4041;
     color: #f7f5ff;
 }
 
-.container {
-    padding-left: 110px;
+nav .links {
+    flex-direction: column;
+    height: 84px;
+    font-size: 12px;
+    transition: 0.3s;
 }
+
+nav .links:link, nav .links:visited {
+    background-color: #f7f5ff;
+    color: #3e4041;
+    fill: #3e4041;
+    stroke: #3e4041;
+}
+
+nav .links:hover, nav .links:focus {
+    background-color: #3e4041;
+    color: #f7f5ff;
+    fill: #f7f5ff;
+    stroke: #f7f5ff;
+}
+
+nav .links svg {
+    margin-bottom: 10px;
+}
+
+nav .contact {
+    flex: 1 auto;
+    width: inherit;
+    writing-mode: vertical-lr;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    background-color: #262728;
+    color: #f7f5ff;
+}
+
+nav .contact svg {
+    margin-bottom: 10px;
+    transform: rotate(90deg);
+    fill: #f7f5ff;
+    stroke: #f7f5ff; 
+}
+
+
+/* Hero Styles */
+
+.hero {
+    display: flex;
+    height: 100vh;
+}
+
+.hero h1 {
+    width: fit-content;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 90px;
+    font-weight: 700;
+    color: #262728; 
+}
+
+.hero p {
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 25px;
+    color: #262728;
+}
+
+.hero a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero svg {
+    width: 20px;
+    height: 20px;
+    margin-left: none;
+    margin-right: none;
+    stroke-width: 1px;
+}
+
+.hero img {
+    height: 600px;
+    width: 400px;
+    border: 1px solid #262728;
+}
+
+.hero .background {
+    position: absolute;
+    display: grid;
+    width: inherit;
+    grid-template-columns: repeat(5, 1.7fr) 1fr;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #f4f4f4;
+}
+
+.hero .line {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hero .introduction {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.hero .button {
+    display: flex;
+    position: relative;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 60px;
+    width: 230px; 
+    height: 70px;
+    text-decoration: none;
+    background-color: #262728; 
+    color: #f4f4f4;
+    transition: 0.3s; 
+}
+
+.hero .button svg {
+    margin-left: 10px;
+    transform: rotate(90deg);
+    fill: #f7f5ff;
+    stroke: #f7f5ff; 
+}
+
+.hero .button::before {
+    content: "";
+    position: absolute;
+    width: inherit; 
+    height: inherit;
+    top: 5px;
+    left: 5px;
+    border: 1px solid #262728;
+    z-index: -1; 
+}
+
+.hero .button:link, .hero .button:visited {
+    background-color: #262728;
+    color: #f4f4f4;
+    fill: #f4f4f4;
+    stroke: #f4f4f4;
+}
+
+.hero .button:hover, .hero .button:focus {
+    background-color: #3e4041;
+    color: #f4f4f4;
+    fill: #f4f4f4;
+    stroke: #f4f4f4;
+}
+
+.hero .image-container {
+    flex: 3;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.hero .socialmedia {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    writing-mode: vertical-lr;
+}
+
+.hero .socialmedia a {
+    margin: 30px;
+    margin-right: 0;
+    font-weight: 700;
+    color: #262728;
+}
+
