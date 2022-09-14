@@ -1,0 +1,54 @@
+#about .content {
+    display: flex;
+    flex-direction: row;
+}
+
+#about .image-container {
+    flex: 4;
+    display: flex;
+    align-items: flex-end;
+}
+
+#about img {
+    height: 100%;
+    width: 470px;
+    border: 1px solid #262728;
+}
+
+#about .description {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+    text-align: justify;
+    line-height: 24px; 
+}
+
+#about .subtitle {
+    margin-bottom: 15px;
+}
+
+#about .personal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+
+#about .info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#about svg {
+    padding: 10px;
+    border-radius: 20%;
+    background-color: #f7f5ff;
+}
+
+#about .info p {
+    margin-left: 15px;
+    font-weight: 600;
+    color: #262728;
+}

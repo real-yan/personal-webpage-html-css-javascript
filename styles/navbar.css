@@ -1,0 +1,56 @@
+#navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+#navbar .logo {
+    height: 100px;
+    font-size: 56px;
+    background-color: #262728;
+    color: #f7f5ff;
+}
+
+#navbar .links {
+    flex-direction: column;
+    height: 84px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+#navbar .links:link, #navbar .links:visited {
+    background-color: #f7f5ff;
+    color: #3e4041;
+    fill: #3e4041;
+    stroke: #3e4041;
+}
+
+#navbar .links:hover, #navbar .links:focus {
+    background-color: #3e4041;
+    color: #f7f5ff;
+    fill: #f7f5ff;
+    stroke: #f7f5ff;
+}
+
+#navbar .links svg {
+    margin-bottom: 10px;
+}
+
+#navbar .contact {
+    flex: 1 auto;
+    width: inherit;
+    writing-mode: vertical-lr;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    background-color: #262728;
+    color: #f7f5ff;
+}
+
+#navbar .contact svg {
+    margin-bottom: 10px;
+    transform: rotate(90deg);
+    fill: #f7f5ff;
+    stroke: #f7f5ff; 
+}

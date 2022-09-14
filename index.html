@@ -8,14 +8,17 @@
         <meta name="description" content="Yan Real's personal webpage for the purpose of providing personal, professional and contact information.">
 
         <link rel="shortcut icon" href="images/notebook.ico" type="image/x-icon">
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/hero.css">
+        <link rel="stylesheet" href="styles/about-me.css">
     </head>
 
     <body>
-        <nav>
+        <nav id="navbar">
             <a class="logo" href="index.html"><span>Y</span></a>
             <ul>
-                <li><a class="links" href="#home">
+                <li><a class="links" href="#hero">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 489.075 489.075" style="enable-background:new 0 0 489.075 489.075;" xml:space="preserve"><g><path d="M482.453,220.775l-115.5-111.2v-88.5c0-11.4-9.4-20.8-20.8-20.8s-20.8,9.4-20.8,20.8v48.5l-66.6-64.1 c-7.3-7.3-19.8-7.3-28.1,0l-223.6,215.3c-8.3,8.3-9.4,20.8-1,29.1c8.4,8.3,20.8,9.4,29.1,1l3.1-3v220.4c0,11.4,9.4,20.8,20.8,20.8 h372.4c11.4,0,19.8-9.4,20.8-19.8v-219.3l2.1,2c15.2,10.5,26,3.1,29.1-2.1C490.753,241.575,490.753,228.075,482.453,220.775z  M281.653,448.575h-72.8v-111.3h72.8V448.575z M410.653,448.575h-88.4v-132.1c0-11.4-9.4-20.8-20.8-20.8h-113.4 c-11.4,0-20.8,9.4-20.8,20.8v132.1h-87.4v-203.9h330.8V448.575L410.653,448.575z M83.853,204.175l161.4-155l159.8,155H83.853z"/></g></svg>
                     <span>HOME</span>
                 </a></li>
@@ -47,7 +50,7 @@
         </nav>
 
         <div class="container">
-            <section id="home" class="hero">
+            <section id="hero">
                 <div class="background">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -74,106 +77,154 @@
                 </div>
             </section>
 
-            <section id="about" class="about">
-                <h2>About Me</h2>
-                <p>Software Development Analyst with more than 6 years of experience developing business supporting systems and web applications mostly using JavaScript as the main programming language. Greater experience in JavaScript, CSS3, HTML5, SQL, OracleDB and PostgreSQL, and an enthusiast of the React library with knowledge of Hooks, Redux, Typescript and GraphQL. Experience as a technical leader facilitating the management and division of work between teams, as well as dealing with professionals of different personalities. Great notions of entrepreneurship and business providing greater effectiveness in meeting goals and recognizing opportunities. English proficiency with plenty experience studying abroad and team working with people from all around the world. Adapted to handle multiple tasks at once and have good time management. Willing to learn and accept new challenges to become a better professional and to contribute efficiently to the business growth and success.</p>
+            <section id="about" class="section-container">
+                <div class="title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content">
+                    <div class="image-container">
+                        <img src="" alt="Yan Real despojado kkk">
+                    </div>
+                    <div class="description">
+                        <h3 class="subtitle">SOFTWARE DEVELOPER</h3>
+                        <p>Software Development Analyst with more than 6 years of experience developing business supporting systems and web applications mostly using JavaScript as the main programming language. Greater experience in JavaScript, CSS3, HTML5, SQL, OracleDB and PostgreSQL, and an enthusiast of the React library with knowledge of Hooks, Redux, Typescript and GraphQL. Experience as a technical leader facilitating the management and division of work between teams, as well as dealing with professionals of different personalities. English proficiency with plenty experience studying abroad and team working with people from all around the world. Willing to learn and accept new challenges to become a better professional and to contribute efficiently to the business growth and success.</p>
+                        <div class="personal-info">
+                            <div class="info">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 315 315" style="enable-background:new 0 0 315 315;" xml:space="preserve"><g><g><g><path d="M157.5,0C93.319,0,41.103,52.215,41.103,116.397c0,62.138,106.113,190.466,110.63,195.898c1.425,1.713,3.538,2.705,5.767,2.705c2.228,0,4.342-0.991,5.767-2.705c4.518-5.433,110.63-133.76,110.63-195.898C273.897,52.215,221.682,0,157.5,0z M157.5,295.598c-9.409-11.749-28.958-36.781-48.303-65.397c-34.734-51.379-53.094-90.732-53.094-113.804C56.103,60.486,101.59,15,157.5,15c55.91,0,101.397,45.486,101.397,101.397c0,23.071-18.359,62.424-53.094,113.804C186.457,258.817,166.909,283.849,157.5,295.598z"/><path d="M195.657,213.956c-3.432-2.319-8.095-1.415-10.413,2.017c-10.121,14.982-21.459,30.684-33.699,46.67c-2.518,3.289-1.894,7.996,1.395,10.514c1.36,1.042,2.963,1.546,4.554,1.546c2.254,0,4.484-1.013,5.96-2.941c12.42-16.22,23.933-32.165,34.219-47.392C199.992,220.938,199.09,216.275,195.657,213.956z"/><path d="M157.5,57.5C123.589,57.5,96,85.089,96,119s27.589,61.5,61.5,61.5S219,152.911,219,119S191.411,57.5,157.5,57.5z M157.5,165.5c-25.64,0-46.5-20.86-46.5-46.5s20.86-46.5,46.5-46.5c25.641,0,46.5,20.86,46.5,46.5S183.141,165.5,157.5,165.5z"/></g></g></svg>
+                                <p>Fortaleza, CE</p>
+                            </div>
+                            <div class="info">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 201.629 201.629" style="enable-background:new 0 0 201.629 201.629;" xml:space="preserve"><path d="M139.321,201.629c-1.457,0-2.925-0.14-4.387-0.426c-0.04-0.006-0.08-0.012-0.12-0.019c-2.116-0.364-52.265-9.341-89.971-47.047C14.447,123.742,4.194,84.726,1.17,69.123c-0.564-1.856-0.888-3.791-0.962-5.757c-0.023-0.219-0.029-0.438-0.018-0.656c-0.054-6.129,2.288-11.87,6.615-16.197l12.818-12.818c0.75-0.75,1.768-1.172,2.828-1.172s2.078,0.422,2.828,1.172l41.479,41.48c1.563,1.562,1.563,4.095,0,5.656L53.942,93.649c-0.327,0.327-0.656,0.637-0.992,0.935c-5.987,5.316-7.148,14.626-2.694,21.65c4.279,6.747,9.12,12.838,14.387,18.105c6.239,6.238,13.642,11.89,22.001,16.795c6.837,4.012,15.627,2.726,21.379-3.127l0.139-0.14l12.818-12.817c1.563-1.563,4.094-1.563,5.656,0l41.479,41.479c1.563,1.562,1.563,4.095,0,5.656l-12.817,12.818C151.006,199.296,145.262,201.629,139.321,201.629z M135.976,193.265c0.11,0.014,0.22,0.031,0.329,0.054c4.857,1.008,9.843-0.478,13.337-3.971l9.988-9.989l-35.822-35.822l-10.104,10.104c-8.302,8.448-21.105,10.265-31.108,4.396c-8.946-5.25-16.889-11.319-23.608-18.039c-5.682-5.682-10.893-12.234-15.486-19.478c-6.531-10.301-4.75-24.024,4.145-31.923c0.226-0.198,0.438-0.4,0.646-0.608l9.984-9.984L22.452,42.18l-9.99,9.989c-2.832,2.833-4.348,6.609-4.27,10.637c0.003,0.044,0.005,0.087,0.006,0.131c0.04,1.376,0.266,2.725,0.672,4.008c0.046,0.147,0.084,0.298,0.113,0.45c2.831,14.729,12.544,52.113,41.517,81.087C85.282,183.264,132.552,192.626,135.976,193.265z M197.444,110.944c-2.209,0-4-1.791-4-4C193.444,52.387,149.058,8,94.5,8c-2.209,0-4-1.791-4-4s1.791-4,4-4c58.97,0,106.944,47.975,106.944,106.944C201.444,109.153,199.653,110.944,197.444,110.944z M172.624,110.944c-2.209,0-4-1.791-4-4c0-41.226-33.539-74.765-74.764-74.765c-2.209,0-4-1.791-4-4s1.791-4,4-4c45.636,0,82.764,37.128,82.764,82.765C176.624,109.153,174.833,110.944,172.624,110.944z M147.866,110.944c-2.209,0-4-1.791-4-4c0-27.573-22.433-50.006-50.006-50.006c-2.209,0-4-1.791-4-4s1.791-4,4-4c31.984,0,58.006,26.021,58.006,58.006C151.866,109.153,150.075,110.944,147.866,110.944z"/></svg>
+                                <p>(85) 99252-6900</p>
+                            </div>
+                            <div class="info">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"><g><path d="M189.432,344.023H30.625V118.075L237.03,243.826c2.452,1.488,5.204,2.236,7.97,2.236c2.781,0,5.548-0.755,8.015-2.266l206.36-126.684v242.223H490V30.117H0v344.531h189.432V344.023z M459.375,60.742v20.435L244.97,212.798L30.625,82.21V60.742H459.375z"/><path d="M371.082,409.525c28.01,0,53.04-26.222,53.04-70.919c0-49.762-34.863-86.116-86.712-86.116c-66.151,0-108.762,53.04-108.762,114.424c0,57.212,41.419,92.969,90.288,92.969c19.965,0,36.651-3.278,53.04-11.919l-4.768-12.813c-12.217,6.854-28.01,10.429-44.995,10.429c-44.101,0-76.58-30.692-76.58-80.454c0-60.49,40.823-98.929,89.393-98.929c46.187,0,72.111,30.99,72.111,74.196c0,34.566-16.984,54.828-32.181,54.53c-9.833-0.298-13.409-10.727-8.939-33.373l10.131-53.934c-7.747-3.576-19.071-6.257-31.884-6.257c-41.419,0-70.621,33.671-70.621,70.621c0,23.54,14.899,37.545,32.181,37.545c17.879,0,31.586-8.641,42.015-26.222h1.192C348.137,401.48,359.162,409.525,371.082,409.525z M312.976,393.434c-13.111,0-19.667-9.535-19.667-22.646c0-28.904,21.156-53.636,47.378-53.636c6.854,0,11.919,1.192,14.899,2.086l-6.257,33.671C346.051,371.384,330.259,393.434,312.976,393.434z"/></g></svg>
+                                <p>real.yan.yr@gmail.com</p>
+                            </div>
+                            <div class="info">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve"><path d="M50.688,48.222C55.232,43.101,58,36.369,58,29c0-7.667-2.996-14.643-7.872-19.834c0,0,0-0.001,0-0.001c-0.004-0.006-0.01-0.008-0.013-0.013c-5.079-5.399-12.195-8.855-20.11-9.126l-0.001-0.001L29.439,0.01C29.293,0.005,29.147,0,29,0s-0.293,0.005-0.439,0.01l-0.563,0.015l-0.001,0.001c-7.915,0.271-15.031,3.727-20.11,9.126c-0.004,0.005-0.01,0.007-0.013,0.013c0,0,0,0.001-0.001,0.002C2.996,14.357,0,21.333,0,29c0,7.369,2.768,14.101,7.312,19.222c0.006,0.009,0.006,0.019,0.013,0.028c0.018,0.025,0.044,0.037,0.063,0.06c5.106,5.708,12.432,9.385,20.608,9.665l0.001,0.001l0.563,0.015C28.707,57.995,28.853,58,29,58s0.293-0.005,0.439-0.01l0.563-0.015l0.001-0.001c8.185-0.281,15.519-3.965,20.625-9.685c0.013-0.017,0.034-0.022,0.046-0.04C50.682,48.241,50.682,48.231,50.688,48.222z M2.025,30h12.003c0.113,4.239,0.941,8.358,2.415,12.217c-2.844,1.029-5.563,2.409-8.111,4.131C4.585,41.891,2.253,36.21,2.025,30z M8.878,11.023c2.488,1.618,5.137,2.914,7.9,3.882C15.086,19.012,14.15,23.44,14.028,28H2.025C2.264,21.493,4.812,15.568,8.878,11.023z M55.975,28H43.972c-0.122-4.56-1.058-8.988-2.75-13.095c2.763-0.968,5.412-2.264,7.9-3.882C53.188,15.568,55.736,21.493,55.975,28z M28,14.963c-2.891-0.082-5.729-0.513-8.471-1.283C21.556,9.522,24.418,5.769,28,2.644V14.963z M28,16.963V28H16.028c0.123-4.348,1.035-8.565,2.666-12.475C21.7,16.396,24.821,16.878,28,16.963z M30,16.963c3.179-0.085,6.3-0.566,9.307-1.438c1.631,3.91,2.543,8.127,2.666,12.475H30V16.963z M30,14.963V2.644c3.582,3.125,6.444,6.878,8.471,11.036C35.729,14.45,32.891,14.881,30,14.963z M40.409,13.072c-1.921-4.025-4.587-7.692-7.888-10.835c5.856,0.766,11.125,3.414,15.183,7.318C45.4,11.017,42.956,12.193,40.409,13.072z M17.591,13.072c-2.547-0.879-4.991-2.055-7.294-3.517c4.057-3.904,9.327-6.552,15.183-7.318C22.178,5.38,19.512,9.047,17.591,13.072z M16.028,30H28v10.038c-3.307,0.088-6.547,0.604-9.661,1.541C16.932,37.924,16.141,34.019,16.028,30z M28,42.038v13.318c-3.834-3.345-6.84-7.409-8.884-11.917C21.983,42.594,24.961,42.124,28,42.038z M30,55.356V42.038c3.039,0.085,6.017,0.556,8.884,1.4C36.84,47.947,33.834,52.011,30,55.356z M30,40.038V30h11.972c-0.113,4.019-0.904,7.924-2.312,11.58C36.547,40.642,33.307,40.126,30,40.038z M43.972,30h12.003c-0.228,6.21-2.559,11.891-6.307,16.348c-2.548-1.722-5.267-3.102-8.111-4.131C43.032,38.358,43.859,34.239,43.972,30z M9.691,47.846c2.366-1.572,4.885-2.836,7.517-3.781c1.945,4.36,4.737,8.333,8.271,11.698C19.328,54.958,13.823,52.078,9.691,47.846z M32.521,55.763c3.534-3.364,6.326-7.337,8.271-11.698c2.632,0.945,5.15,2.209,7.517,3.781C44.177,52.078,38.672,54.958,32.521,55.763z"/></svg>
+                                <p>yanreal.me.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section id="skillset" class="skillset">
-                <h2>Skills</h2>
-                <div>
-                    <h3>JavaScript</h3>
-                    <p>More than 5 years</p>
+            <section id="skillset" class="section-container">
+                <div class="title">
+                    <h2>Skills</h2>
                 </div>
-                <div>
-                    <h3>ReactJS</h3>
-                    <p>More than 1 year</p>
-                </div>
-                <div>
-                    <h3>Typescript</h3>
-                    <p>More than 1 years</p>
-                </div>
-                <div>
-                    <h3>CSS</h3>
-                    <p>More than 2 years</p>
+                <div class="content">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>More than 5 years</p>
+                    </div>
+                    <div>
+                        <h3>ReactJS</h3>
+                        <p>More than 1 year</p>
+                    </div>
+                    <div>
+                        <h3>Typescript</h3>
+                        <p>More than 1 years</p>
+                    </div>
+                    <div>
+                        <h3>CSS</h3>
+                        <p>More than 2 years</p>
+                    </div>
                 </div>
             </section>
 
-            <section id="resume" class="resume">
-                <h2>Resume</h2>
-                <div>
-                    <h3>Education</h3>
-                    <div>
-                        <h4>Instituto Nacional de Telecomunicações - INATEL</h4>
-                        <p>Bachelor of Engineering - BE, Telecommunication Engineering</p>
-                    </div>
-                    <div>
-                        <h4>University of Arkansas</h4>
-                        <p>Scholarship, Electrical Engineering and Computer Engineering</p>
-                    </div>
-                    <div>
-                        <h4>Escola Técnica de Eletrônica Francisco Moreira da Costa</h4>
-                        <p>Technician, Electronics</p>
-                    </div>
+            <section id="resume" class="section-container">
+                <div class="title">
+                    <h2>Resume</h2>
                 </div>
+                <div class="content">
+                    <div>
+                        <h3>Education</h3>
+                        <div>
+                            <h4>Instituto Nacional de Telecomunicações - INATEL</h4>
+                            <p>Bachelor of Engineering - BE, Telecommunication Engineering</p>
+                        </div>
+                        <div>
+                            <h4>University of Arkansas</h4>
+                            <p>Scholarship, Electrical Engineering and Computer Engineering</p>
+                        </div>
+                        <div>
+                            <h4>Escola Técnica de Eletrônica Francisco Moreira da Costa</h4>
+                            <p>Technician, Electronics</p>
+                        </div>
+                    </div>
 
-                <div>
-                    <h3>Professional</h3>
                     <div>
-                        <h4>Amdocs</h4>
-                        <p>Software Engineer</p>
-                        <p>Aug, 2021 - Present</p>
-                    </div>
-                    <div>
-                        <h4>Salutis</h4>
-                        <p>System Development Technical Lead</p>
-                        <p>Apr, 2019 - Aug, 2021</p>
-                        <p>Technical leader responsible for analyzing the development action points of a system customization, assigning tasks to each professional of the team as well as mentoring newcomers. Development of new functionalities in a web application of an ERP (Enterprise Resource Planning) to health insurance plan operators using JavaScript as the main programming language. Development of SOAP and REST APIs for integration with other systems. Revision of code developed by team members in order to ensure quality of work. Providing training in SQL and database structure.</p>
-                    </div>
-                    <div>
-                        <h4>Ericsson</h4>
-                        <p>System Development Analyst</p>
-                        <p>Aug, 2017 - Feb, 2019</p>
-                        <p>Development of workflows of an end-to-end BSS solution to telephone operator companies using JavaScript as the main programming language. The main modules worked on are Catalog & Order Manager and Network Provisioning. Worked with teams filled up with professionals from different nationalities including weekly follow-up meetings in english.</p>
-                    </div>
-                    <div>
-                        <h4>Ericsson</h4>
-                        <p>Software Development Intern</p>
-                        <p>Jul, 2016 - Jun, 2017</p>
-                        <p>Development of the Frontend, using JavaScript, HTML5 and CSS3, of a real-time communication platform via Browser (WebRTC). Structuring of an authenticating user database over the LDAP (Lightweight Directory Access Protocol) protocol using OpenLDAP. Configuration of cloud VM instances using Amazon EC2 AWS.</p>
+                        <h3>Professional</h3>
+                        <div>
+                            <h4>Amdocs</h4>
+                            <p>Software Engineer</p>
+                            <p>Aug, 2021 - Present</p>
+                        </div>
+                        <div>
+                            <h4>Salutis</h4>
+                            <p>System Development Technical Lead</p>
+                            <p>Apr, 2019 - Aug, 2021</p>
+                            <p>Technical leader responsible for analyzing the development action points of a system customization, assigning tasks to each professional of the team as well as mentoring newcomers. Development of new functionalities in a web application of an ERP (Enterprise Resource Planning) to health insurance plan operators using JavaScript as the main programming language. Development of SOAP and REST APIs for integration with other systems. Revision of code developed by team members in order to ensure quality of work. Providing training in SQL and database structure.</p>
+                        </div>
+                        <div>
+                            <h4>Ericsson</h4>
+                            <p>System Development Analyst</p>
+                            <p>Aug, 2017 - Feb, 2019</p>
+                            <p>Development of workflows of an end-to-end BSS solution to telephone operator companies using JavaScript as the main programming language. The main modules worked on are Catalog & Order Manager and Network Provisioning. Worked with teams filled up with professionals from different nationalities including weekly follow-up meetings in english.</p>
+                        </div>
+                        <div>
+                            <h4>Ericsson</h4>
+                            <p>Software Development Intern</p>
+                            <p>Jul, 2016 - Jun, 2017</p>
+                            <p>Development of the Frontend, using JavaScript, HTML5 and CSS3, of a real-time communication platform via Browser (WebRTC). Structuring of an authenticating user database over the LDAP (Lightweight Directory Access Protocol) protocol using OpenLDAP. Configuration of cloud VM instances using Amazon EC2 AWS.</p>
+                        </div>
                     </div>
                 </div>
             </section>
             
-            <section id="portfolio" class="portfolio">
-                <h2>Portfolio</h2>
-                <div>
-                    <h3>Personal Webpage</h3>
-                    <img src="" alt="Screenshot of Yan Real's personal webpage">
+            <section id="portfolio" class="section-container">
+                <div class="title">
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Personal Webpage</h3>
+                        <img src="" alt="Screenshot of Yan Real's personal webpage">
+                    </div>
                 </div>
             </section>
 
-            <section id="comments" class="comments">
-                <h2>Comments</h2>
-                <div>
-                    <h3>Cibely Freire</h3>
-                    <p>Tive o prazer de trabalhar por quase dois anos com o Yan. Trabalhamos juntos na mesma equipe e logo percebi a facilidade que ele tem de se relacionar com as pessoas, de buscar aprender e o compromisso com as entregas. Recomendo o Yan pelas habilidades como desenvolvedor e gestor de projetos.</p>
+            <section id="comments" class="section-container">
+                <div class="title">
+                    <h2>Comments</h2>
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Cibely Freire</h3>
+                        <p>Tive o prazer de trabalhar por quase dois anos com o Yan. Trabalhamos juntos na mesma equipe e logo percebi a facilidade que ele tem de se relacionar com as pessoas, de buscar aprender e o compromisso com as entregas. Recomendo o Yan pelas habilidades como desenvolvedor e gestor de projetos.</p>
+                    </div>
                 </div>
             </section>
 
-            <section id="contact" class="contact">
-                <h2>Contact Me</h2>
-                <div>
-                    <h3>Phone</h3>
-                    <p>+55 85 992526900</p>
+            <section id="contact" class="section-container">
+                <div class="title">
+                    <h2>Contact Me</h2>
                 </div>
-                <div>
-                    <h3>Email</h3>
-                    <p>real.yan.yr@gmail.com</p>
-                </div>
-                <div>
-                    <h3>Location</h3>
-                    <p>Fortaleza, Ceará - Brazil</p>
+                <div class="content">
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+55 85 992526900</p>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>real.yan.yr@gmail.com</p>
+                    </div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Fortaleza, Ceará - Brazil</p>
+                    </div>
                 </div>
             </section>
 
