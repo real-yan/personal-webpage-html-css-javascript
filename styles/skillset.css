@@ -1,0 +1,42 @@
+#skillset {
+    height: 60vh;
+}
+
+#skillset .title {
+    flex: 5;
+}
+
+#skillset .content {
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#skillset .card {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 210px;
+}
+
+#skillset svg {
+    width: 40px;
+    height: 40px;
+    stroke-width: 0.8px;
+    margin-bottom: 18px;
+}
+
+#skillset h3 {
+    font-size: 25px;
+}
+
+#skillset p {
+    font-weight: 600;
+}
